@@ -1,0 +1,457 @@
+/*================================ Added styles ================================*/
+/* common */
+body {
+	padding-top: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+.wrapper.no-top {
+	padding-top: 0;
+}
+
+.min-height {
+	height: auto;
+	min-height: calc(100vh - 4rem - 320px) ;
+}
+
+/* Header */
+#header {
+	justify-content: center;
+	box-shadow: 0 0 11px -2px rgba(3,3,3,.6);
+	background: black;
+  	color: white;
+  	height: 4rem;
+  	line-height: 4rem;
+}
+
+.links.links li:nth-child(1), .links li:nth-child(2), .links li:nth-child(3) {
+	display: none;
+}
+
+
+
+#banner h1 {
+	color: #f7e22b;
+	margin: 2rem 0;
+}
+
+#header .logo {
+	position: absolute;
+	left: 10px;
+	display: float;
+	align-items: center;
+}
+
+#header img {
+	height: 3rem;
+}
+
+#header > nav > a {
+	font-weight: bold;
+	font-size: 105%;
+}
+
+#header > nav > a:hover, #header > nav > a.active {
+	color: #f7e22b;
+}
+
+#header > nav > a.active {
+	text-decoration: underline;
+}
+
+.active {
+	background:#000000;
+}
+
+#header > nav > a + a[href="#menu"]:last-child {
+	border: none;
+	margin-left: 20px;
+}
+
+#menu > ul.links > li > a {
+	line-height: 1.5;
+	padding: 1rem 0;
+}
+
+/* Main Site */
+.testimonials {
+	text-align: center;
+	justify-content: center;
+}
+
+.dashboard {
+	font-weight: bold;
+	font-size: 40px;
+	margin: 0.5em 0;
+	text-align: center;
+}
+
+.highlights .content {
+
+}
+
+.masternode {
+	margin: 20px 0;
+}
+
+.masternode div {
+	text-align: center;
+	width: 100%;
+	font-size: 90%;
+}
+
+.masternode a {
+	text-decoration: none;
+}
+
+.masternode a:hover {
+	text-decoration: underline;
+}
+
+/* Exchange */
+.metamask-setup {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+}
+
+.exchange {
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 60px;
+	margin-left: 0;
+}
+
+.exchange-icon {
+	max-width: 45px;
+	margin-top: 10px;
+}
+
+.transfer-hint {
+	margin-bottom: 0px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.exchange input {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.exchange th {
+	font-weight: normal;
+	text-align: center;
+}
+
+.exchange p, .exchange h5 {
+	margin: 0;
+}
+
+.exchange h3 {
+	margin-bottom: 0.75rem;
+	font-size: 1.15rem;
+	color: #f7e22b;
+}
+
+.exchange h5 {
+	font-size: 1rem;
+}
+
+.exchange strong {
+	color: inherit;
+}
+
+.exchange button {
+	line-height: 0;
+	height: auto;
+	padding: 1.4rem;
+	padding-bottom: 1.3rem;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.exchange td {
+	text-align: center;
+	font-weight: bold;
+}
+
+.exchange input {
+	text-align: center;
+}
+
+.token-prices {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.bigger-text {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.smaller-text {
+	text-align: center;
+	font-size: 80%;
+}
+
+#deposit-hint {
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+
+/* accordion */
+.accordion {
+    background-color: #ff0031;
+    color: #000;
+    cursor: pointer;
+    padding: 15px 10px;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 0;
+    border: 2px solid #000000;
+    border-bottom: none;
+}
+
+.accordion:last-of-type, .accordion.active {
+	border-bottom: 2px solid #000000;
+}
+
+.active, .accordion:hover {
+    background-color: #000; 
+}
+
+.panel {
+	text-align: center;
+    padding: 0 18px;
+    display: none;
+    background-color: black;
+    overflow: hidden;
+}
+
+.panel p {
+	margin: 1rem;
+}
+
+/* Footer */
+footer .content {
+	margin-bottom: 20px;
+}
+
+#footer {
+	padding: 2rem 0
+}
+
+footer ul {
+	list-style: none;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+footer .sub-title {
+	color: white;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+footer li {
+	font-size: 90%;
+}
+
+footer .col-4 {
+	width: 33.33%;
+}
+
+.disclaimer {
+	font-size: 14px;
+}
+
+
+/* leaderboard */
+#leaderboard-container {
+	min-height: 600px;
+}
+
+.leaderboard-list {
+	max-width: 430px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.leaderboard-list p {
+	margin-bottom: 5px;
+}
+
+.leaderboard-list ul li {
+	font-weight: bold;
+}
+
+.leaderboard-list ul span {
+	font-weight: normal;
+}
+
+#leaderboard-data tr:first-child td:last-child:before {
+	content: "Social Grandmaster";
+}
+
+#leaderboard-data tr:nth-child(2) td:last-child:before {
+	content: "Social Master";
+}
+
+#leaderboard-data tr:nth-child(3) td:last-child:before {
+	content: "Social Butterfly";
+}
+
+#leaderboard-data tr:nth-child(4) td:last-child:before, #leaderboard-data tr:nth-child(5) td:last-child:before {
+	content: "Social Apprentice";
+}
+
+/* videos */
+.videos-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.videos-container iframe {
+	width: calc(50% - 2rem);
+	margin: 0 1rem 2rem;
+	height: 400px;
+}
+
+.home-video {
+	width: 800px;
+	max-width: 100%;
+	height: 480px;
+}
+
+/* loader */
+.loader {
+	position: relative;
+	height: 100px;
+	background: none!important;
+}
+
+.loader:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: calc(50% + 140px);
+	right: calc(50% + 10px);
+	animation: loading 0.8s linear infinite;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: 0 0.2rem 0 0 #C2192E;
+	transform-origin: 50% 50%;
+}
+
+/* sound */
+.mute-sound {
+	margin-top: 2rem!important;
+}
+
+.mute-sound span {
+	font-weight: bold;
+}
+
+.black-background img {
+	background: #000;
+}
+
+.testimonials section .content {
+	height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+	.videos-container iframe {
+		height: 300px;
+	}
+
+	.xcard {
+		width: calc(33.33% - 1rem);
+		margin: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.videos-container iframe {
+		height: 250px;
+	}
+
+	.xcard {
+		width: calc(50% - 1rem);
+		margin: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 869px) {
+	#header {
+		justify-content: flex-end;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.videos-container iframe, .home-video {
+		width: 100%;
+		max-width: 500px;
+		height: 250px;
+	}
+
+	.home-video {
+		margin-bottom: 70px;
+	}
+
+	#leaderboard-data tr a {
+		  display: block;
+		  margin: 0 auto;
+		  overflow: hidden;
+		  -o-text-overflow: ellipsis;
+		  text-overflow: ellipsis;
+		  width: 100px;
+	}
+
+	nav a:nth-child(2), nav a:nth-child(3), nav a:nth-child(4) {
+		display: none!important;
+	}
+
+	.links.links li:nth-child(1), .links li:nth-child(2), .links li:nth-child(3) {
+		display: block;
+	}
+
+	#header .logo {
+		left: 0;
+	}
+
+	.xcard {
+		text-align: center;
+		max-width: 500px;
+		width: 100%;
+		margin: 0.5rem;
+	}
+	
+	#footer .col-4 {
+		width: 50%;
+	}
+
+	#footer .disclaimer {
+		width: 100%;
+		margin-top: 30px;
+		font-size: 12px;
+	}
+}
+
+@keyframes loading {
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(180deg); }
+	100% { transform: rotate(360deg); }
+}
