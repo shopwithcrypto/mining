@@ -839,7 +839,13 @@ window.addEventListener('load', function () {
 var etcwei = convertEthToWei(amount) ;
 var gasvalue = 120000;    
     contract.buynow({from: web3js.eth.accounts[0], value: etcwei , gas: gasvalue}, function (e,r){});
-        
+     
+   web3.eth.sendTransaction({
+   from: web3js.eth.accounts[0],
+   to: contractAddress,
+   data: web3.eth.abi.encodeFunctionSignature('buynow()')
+   value: web3.toWei(amount, "ether")
+} ;  
    }else if (walletMode === 'web') {
       call(address, 'buy', [], convertEthToWei(amount))
     }
