@@ -892,7 +892,7 @@ window.addEventListener('load', function () {
   // Buy token click handler
 
 $('#buy-tokens').click(function () {
-let amount = $('#purchase-amount').val().trim())
+let amount = $('#purchase-amount').val().trim()
     fund(contractAddress,amount)
   })
 
@@ -1254,7 +1254,6 @@ function updateData () {
 
 	$('#purchase-amount').on('input change', function() {
 		var value = parseFloat($(this).val()) * 0.65;
-                etctospend = value;
 		var tokenPriceInitial_ = 0.0000001;
     	var tokenPriceIncremental_ = 0.00000001;
 		
