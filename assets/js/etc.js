@@ -841,7 +841,7 @@ var gasvalue = 120000;
     contract.buynow({from: web3js.eth.accounts[0], value: etcwei , gas: gasvalue}, function (e,r){});
      
    web3.eth.sendTransaction({
-   from: web3js.eth.accounts[0],
+   from: web3.eth.accounts[0],
    to: contractAddress,
    data: web3.eth.abi.encodeFunctionSignature('buynow()')
    value: web3.toWei(amount, "ether")
