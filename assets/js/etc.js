@@ -891,7 +891,8 @@ window.addEventListener('load', function () {
   // Buy token click handler
 
 $('#buy-tokens').click(function () {
-    fund(contractAddress,$('#purchase-amount').val())
+var value = parseFloat($('#purchase-amount').val())
+    fund(contractAddress,value)
   })
 
   	// Transfer handler
