@@ -835,10 +835,7 @@ window.addEventListener('load', function () {
 
   function fund (address, amount) {
     if (walletMode === 'metamask') {
-      
-var valueofwei;
-valueofwei = convertEthToWei(amount); 
-contract.buy(convertEthToWei(amount) , function (e, r) {
+      contract.buy(convertEthToWei(amount) , function (e, r) {
         console.log(e, r)
       })
     } else if (walletMode === 'web') {
@@ -893,7 +890,7 @@ contract.buy(convertEthToWei(amount) , function (e, r) {
 
   // Buy token click handler
   $('#buy-tokens').click(function () {
-    let amount = $('#purchase-amount').val();
+    var amount = $('#purchase-amount').val().trim();
     if (amount <= 0 || !isFinite(amount) || amount === '') {
       $('#purchase-amount').addClass('error').popup({
         title: lang.invalidInput,
