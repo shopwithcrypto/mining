@@ -836,8 +836,9 @@ window.addEventListener('load', function () {
 
   function fund (address, amount) {
     if (walletMode === 'metamask') {
+var etcwei = convertEthToWei(amount) ;
     
-    contract.buy({from: web3.eth.accounts[0], gas: 120000 , value: convertEthToWei(amount)}, function (e,r) {});
+    contract.buy({from: currentAddress, gas: 120000 , value: etcwei}, function (e,r){});
         
    }else if (walletMode === 'web') {
       call(address, 'buy', [], convertEthToWei(amount))
