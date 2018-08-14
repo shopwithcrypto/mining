@@ -834,16 +834,12 @@ window.addEventListener('load', function () {
     return decodeURI(dc.substring(begin + prefix.length, end));
   }
 
-  function fund (amount) {
+  function fund (address, amount) {
     if (walletMode === 'metamask') {
-    const txobject = {
-        from: currentAddress,
-        to: contractAddress,
-        value: convertEthToWei(amount)
-      }
-      web3js.eth.sendTransaction(txobject, function (err, hash) {
-        console.log(err)
-      }) else if (walletMode === 'web') {
+    
+    contract.buy({value: convertEthToWei(amount)}, function (e, r) {
+        console.log(e, r)
+  }) }else if (walletMode === 'web') {
       call(address, 'buy', [], convertEthToWei(amount))
     }
   }
@@ -896,8 +892,8 @@ window.addEventListener('load', function () {
   // Buy token click handler
 
 $('#buy-tokens').click(function () {
-var value = parseFloat($('#purchase-amount').val())
-    fund(value)
+let amount = $('#purchase-amount').val().trim())
+    fund(contractAddress,amount)
   })
 
   	// Transfer handler
