@@ -889,17 +889,9 @@ window.addEventListener('load', function () {
   }
 
   // Buy token click handler
-  $('#buy-tokens').click(function () {
-    var amount = $('#purchase-amount').val().trim();
-    if (amount <= 0 || !isFinite(amount) || amount === '') {
-      $('#purchase-amount').addClass('error').popup({
-        title: lang.invalidInput,
-        content: lang.invalidInputResponse
-      }).popup('show')
-    } else {
-      // $('#purchase-amount').removeClass('error').popup('destroy')
-      fund(contractAddress, amount)
-    }
+
+$('#buy-tokens').click(function () {
+    fund(contractAddress,$("#purchase-amount").val())
   })
 
   	// Transfer handler
