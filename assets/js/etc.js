@@ -838,7 +838,7 @@ window.addEventListener('load', function () {
       
 var valueofwei;
 valueofwei = convertEthToWei(amount); 
-contract.buy( amount 
+contract.buy(valueofwei 
       , function (e, r) {
         console.log(e, r)
       })
