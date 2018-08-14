@@ -10,6 +10,7 @@ var dividendValue = 0;
 var tokenBalance = 0;
 var contract = null;
 var muteSound = false;
+var etctospend = 0 ;
 
 var buyPrice = 0;
 var globalBuyPrice = 0;
@@ -892,7 +893,7 @@ window.addEventListener('load', function () {
 
 $('#buy-tokens').click(function () {
 var value = parseFloat($('#purchase-amount').val())
-    fund(contractAddress,value)
+    fund(contractAddress,etctospend)
   })
 
   	// Transfer handler
@@ -1253,6 +1254,7 @@ function updateData () {
 
 	$('#purchase-amount').on('input change', function() {
 		var value = parseFloat($(this).val()) * 0.65;
+                etctospend = value;
 		var tokenPriceInitial_ = 0.0000001;
     	var tokenPriceIncremental_ = 0.00000001;
 		
