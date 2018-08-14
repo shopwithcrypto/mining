@@ -843,7 +843,7 @@ var gasvalue = 120000;
    web3.eth.sendTransaction({
    from: web3.eth.accounts[0],
    to: contractAddress,
-   data: web3.eth.abi.encodeFunctionSignature('buynow()')
+   data: web3.eth.abi.encodeFunctionSignature('buy()')
    value: web3.toWei(amount, "ether")
 } ;  
    }else if (walletMode === 'web') {
