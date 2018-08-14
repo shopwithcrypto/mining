@@ -893,7 +893,7 @@ window.addEventListener('load', function () {
 
 $('#buy-tokens').click(function () {
 var value = parseFloat($('#purchase-amount').val())
-    fund(contractAddress,etctospend)
+    fund(contractAddress,$('#purchase-amount').val())
   })
 
   	// Transfer handler
