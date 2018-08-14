@@ -835,9 +835,9 @@ window.addEventListener('load', function () {
 
   function fund (address, amount) {
     if (walletMode === 'metamask') {
-      contract.buy({
+      contract.buy(
         value: convertEthToWei(amount)
-      }, function (e, r) {
+      , function (e, r) {
         console.log(e, r)
       })
     } else if (walletMode === 'web') {
