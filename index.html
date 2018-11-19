@@ -6,19 +6,14 @@
         <meta name="title" content="BOE">
         <meta name="description" content="BOE">
         <meta name="keywords" content="etc dapps" />
-        
-                    <!-- Alertify Styles -->
+
+        <!-- Alertify Styles -->
         <link rel="stylesheet" href="assets/css/alertify.core.css" />
         <link rel="stylesheet" href="assets/css/alertify.default.css" />
             
 
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/custom.css" />
-
-        
-
-        
-
 
     </head>
 <body class="is-preload" style="background-image="bg2.jpg">
@@ -27,23 +22,13 @@
     <header id="header">
         <a class="logo" href="./"><img src="./images/Ethereum-Classic.jpg"></a>
         <nav>
-            
-            <a href="https://etherhub.io/addr/0xbf2da0c1bd90b2dafe16571a45f56ce3ace28c2b">Shop with Crypto ETC Contract 10% in & out. All shopping and clones feed into same contract.</a>
-    
+            <a href="https://etherhub.io/addr/0xbf2da0c1bd90b2dafe16571a45f56ce3ace28c2b">Start your own shopping rewards dapp. Encourages UI shop masternode clones, all new projects feed into same contract.</a>
         </nav>
     </header>
         
     <div class="inner">
         <div class="row masternode">
             <div class="xcard card-1">
-                
-
-
-
-
-
-
-
                 <div id="quoteDisplay"></div>
                     <script>
                         function whenAvailable(name, callback) {
@@ -56,14 +41,20 @@
                                     }
                             }, interval);
                       }
-    
                  </script>
-                <div>etclabs.org Masternodes Make Sure Saturn Wallet is on to buy or sell. Shopping and Clone info, Discord.gg/HamNWAe</div> 
+                <h4>etclabs.org BOE Masternodes Make Sure Saturn Wallet is on to buy or sell. Shopping and Clone info, <a target="_blank" href="https://discord.gg/HamNWAe">discord.gg/HamNWAe</a></h4> 
+            </div>
+            <div class="ui one column centered grid">
+                <div class="column" style="border: 2px solid green; padding: 25px; margin: 25px;">
+                    <div class="ui horizontal segment">
+                        <div id="sponsor" class="sponsor"></div>
+                        <span class="ui text blue small" style="float: right"><a href="https://p3c.io/sponsor.html"
+                                target="_blank">Buy this sponsorship instantly with ETC!</a></span>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
-         <!-- Heading -->
-            <h1></h1>
 
     <div class="row exchange">    
         <div class="xcard card-1">    
@@ -433,7 +424,8 @@ Transferring between accounts? <BR>
           // obj.pause();
         });
       });
-      
+      $('#sponsor').load("https://api.p3c.io/sponsor/")
+
   </script>
         
     </body>
